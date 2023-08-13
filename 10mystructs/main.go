@@ -10,7 +10,9 @@ func main() {
 	fmt.Println(harish.describe())
 	fmt.Println(harish)
 	fmt.Printf("Details of Harish: %+v\n", harish)
-	fmt.Printf("Name : %v, Mail: %v", harish.Name, harish.Mail)
+	fmt.Printf("Name : %v, Mail: %v\n", harish.Name, harish.Mail)
+	nameval := Hello("Harish new")
+	fmt.Println(nameval)
 }
 
 type User struct {
