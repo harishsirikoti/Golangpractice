@@ -19,7 +19,7 @@ func main() {
 		panic(err)
 	}
 	fmt.Println("The lenght of the file: ", length)
-	file.Close()
+	defer file.Close()
 	readfile("./autofile.txt")
 }
 func readfile(name string) {

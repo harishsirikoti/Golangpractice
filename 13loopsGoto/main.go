@@ -6,7 +6,7 @@ func main() {
 	weekdays := []string{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat"}
 
 	for i, day := range weekdays {
-		fmt.Printf("Index %v Day %v\n", i, day)
+		fmt.Println("Index ", i, "Day", day)
 	}
 	num := 1
 	for num < 10 {

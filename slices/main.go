@@ -22,4 +22,13 @@ func main() {
 	food := append(veggies, fruits...)
 	fmt.Println("food:", food)
 
+	nos := []int{8, 7, 6}
+	fmt.Println("slice before function call", nos)
+	subtactOne(nos)                               //function modifies the slice
+	fmt.Println("slice after function call", nos) //modifications are visible outside
+}
+func subtactOne(numbers []int) {
+	for i := range numbers {
+		numbers[i] -= 2
+	}
 }
