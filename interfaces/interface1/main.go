@@ -32,4 +32,5 @@ func main() {
 	cacularea(rectangle)
 	circle := Circle{Radius: 10}
 	cacularea(circle)
+	main2()
 }

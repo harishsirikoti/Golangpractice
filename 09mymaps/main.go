@@ -14,6 +14,6 @@ func main() {
 
 	//Sample loops
 	for key, value := range languages {
-		fmt.Printf("For key %v, value is %v\n", key, value)
+		fmt.Printf("For key %v, value is %v \n", key, value)
 	}
 }
