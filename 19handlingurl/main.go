@@ -8,6 +8,7 @@ import (
 const Myurl string = "https://courses.learncodeonline.in/learn?coursename=reactjs&paymentid=ghbj456ghb"
 
 func main() {
+
 	responce, _ := url.Parse(Myurl)
 	fmt.Println(responce.Scheme)
 	fmt.Println(responce.Host)

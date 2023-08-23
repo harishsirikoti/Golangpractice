@@ -14,9 +14,7 @@ app.get('/', (req, res) => {
   res.status(200).send("Welcome to LearnCodeonline server")
 })
 
-app.get('/get', (req, res) => {
-    res.status(200).json({message: "Hello from learnCodeonline.in"})
-  })
+
 
 
 app.post('/post', (req, res) => {
@@ -24,7 +22,9 @@ app.post('/post', (req, res) => {
 	
 	res.status(200).send(myJson);
 })
-
+app.get('/get', (req, res) => {
+  res.status(200).json({message: "Hello from Harish"})
+})
 app.post('/postform', (req, res) => {
     res.status(200).send(JSON.stringify(req.body));
 })
